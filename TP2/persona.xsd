@@ -13,11 +13,20 @@
 			<xsd:maxInclusive value="500"/>
 	</xsd:restriction>
 	</xsd:simpleType>
+
+
 	<xsd:simpleType name="telephone">
 		<xsd:restriction base="xsd:string" >
 			<xsd:pattern value="\d{4}-\d{4}" />
 		</xsd:restriction>
 	</xsd:simpleType>
+
+	<xsd:simpleType name="cellphone">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="15[3456]-\d{3}-\d{4}">
+		</xsd:restriction>
+	</xsd:simpleType>
+
 	<xsd:complexType name="address">
 		<xsd:sequence>
 			<xsd:element name="street" type="xsd:string"/>
@@ -52,7 +61,20 @@
 				<xsd:element name="fechaNac" type="xsd:date"/>
 				<xsd:element name="sexo" type="sex"/>
 				<xsd:element name="peso" type="weight"/>
-				<xsd:element name="telefono" type="telephone"/>
+				<xsd:element name="telefono">
+					<xsd:complexType>
+						<xsd:choice>
+							<xsd:sequence>
+								<xsd:element name="particular" type="telephone">
+								<xsd:element name="celular" type="cellphone">
+							</xsd:sequence>
+							<xsd:choice>
+								<xsd:element name="celular" type="cellphone">
+								<xsd:element name="particular" type="telephone">
+							</xsd:choide>
+						</xsd:choice>
+						</xsd:complexType>
+
 				<xsd:element name="direccion" type="address"/>
 			</xsd:sequence>
 		</xsd:complexType>
