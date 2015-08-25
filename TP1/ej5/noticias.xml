@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!DOCTYPE rss SYSTEM "noticias.dtd">
+<rss version="1.0">
+<channel>
+	<title>Marcelo no RSS</title>
+	<link>http://chelivery.com</link>
+
+	<description>
+		Algun texto descriptivo
+	</description>
+
+	<pubDate />
+	<webMaster>Chelivr</webMaster>
+	<language>es-ar</language>
+	
+	<item>
+		<title>Tit1</title>
+		<link>http://etc</link>
+		<pubDate />
+	</item>
+	<item>
+		<title>Tit2</title>
+		<link>http://etc</link>
+		<pubDate />
+	</item>
+	<item>
+		<title>Tit3</title>
+		<link>http://etc</link>
+		<pubDate>11-01-2014</pubDate>
+	</item>
+</channel>	
+</rss>

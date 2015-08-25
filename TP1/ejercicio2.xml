@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE emails SYSTEM "emails.dtd">
+<emails>
+
+<email>
+	<date format="YYYY-MM-DD">2015-12-12</date>
+	<header>
+		<from>
+			<name>
+				<firstname>Marcelo</firstname>
+				<surname>Lynchester</surname>
+			</name>
+			<address>chelo@chelivery.com</address>
+		</from>
+		<to>
+			<name>
+				<firstname>El</firstname>
+				<surname>Chabon</surname>
+			</name>
+			<address>chaboncin@dominio.com</address>
+		</to>
+	</header>
+	<subject>
+		Prueba!!
+	</subject>
+	<body>
+		Querido Chabon:
+		Ojala te mueras
+		Un saludo
+	</body>
+</email>
+	
+<email>
+	<date format="YYYY-MM-DD">2015-21-12</date>
+	<header>
+		<from>
+			<name>
+				<firstname>Marcelo</firstname>
+				<surname>Lynchester</surname>
+			</name>
+			<address>chelo@chelivery.com</address>
+		</from>
+		<to>
+			<name>
+				<firstname>El</firstname>
+				<surname>Chabon</surname>
+			</name>
+			<address>chaboncin@dominio.com</address>
+		</to>
+	</header>
+	SAKDJSAKLDJ3304923049SKADJJ235
+	<subject>
+		Prueba!!
+	</subject>
+	<body>
+		probando
+	</body>
+</email>
+
+<email id="C1">
+	alfanum23492349239
+	<date format="YYYY-MM-DD">2015-12-12</date>
+	<header>
+		<from>
+			<name>
+				<firstname>Marcelo</firstname>
+				<surname>Lynchester</surname>
+			</name>
+			<address>chelo@chelivery.com</address>
+		</from>
+		<to>
+			<name>
+				<firstname>El</firstname>
+				<surname>Chabon</surname>
+			</name>
+			<address>chaboncin@dominio.com</address>
+		</to>
+
+	</header>
+	<subject>
+		Prueba!!
+	</subject>
+		 
+	<body>
+		Querido Chabon:
+		Ojala te mueras
+		Un saludo
+	</body>
+</email>
+</emails>

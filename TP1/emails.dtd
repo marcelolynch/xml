@@ -1,0 +1,19 @@
+<!ELEMENT emails (email*) >
+<!ELEMENT email (#PCDATA | (date, header,subject,body))* >
+	<!ELEMENT date (#PCDATA)>
+	<!ELEMENT header (from,to)>
+		<!ELEMENT from (name, address)>
+		<!ELEMENT to (name, address)+>
+			<!ELEMENT name (firstname,surname)>
+			<!ELEMENT firstname (#PCDATA)>
+			<!ELEMENT surname (#PCDATA)>
+			<!ELEMENT address (#PCDATA)>
+	<!ELEMENT subject (#PCDATA) >
+	<!ELEMENT body (#PCDATA) >
+
+<!ATTLIST date format CDATA "YYYY-MM-DD">
+<!ATTLIST email id ID #IMPLIED
+		parent-email IDREF #IMPLIED>
+<!ATTLIST header encoding CDATA "UTF-8"
+	  mailing-client CDATA #IMPLIED>
+
