@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<alumno>
+  <legajo></legajo>
+  <nombre></nombre>
+  <apellido></apellido>
+  <materias>
+    <materia>
+      <codigo></codigo>
+      <nombreMateria></nombreMateria>
+      <objetivos></objetivos>
+      <docentes>
+	<docente></docente>
+	<docente></docente>
+      </docentes>
+    </materia>
+    <materia>
+      <codigo></codigo>
+      <nombreMateria></nombreMateria>
+      <objetivos></objetivos>
+      <docentes>
+	<docente></docente>
+      </docentes>
+    </materia>
+    <materia>
+      <codigo></codigo>
+      <nombreMateria></nombreMateria>
+      <objetivos></objetivos>
+      <docentes>
+	<docente></docente>
+	<docente></docente>
+	<docente></docente>
+      </docentes>
+    </materia>
+  </materias>
+</alumno>

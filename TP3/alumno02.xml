@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<alumno>
+  <legajo></legajo>
+  <materias>
+    <materia>
+      <codigo></codigo>
+      <nombreMateria></nombreMateria>
+      <objetivos></objetivos>
+      <docentes>
+	<docente></docente>
+      </docentes>
+    </materia>
+  </materias>
+</alumno>

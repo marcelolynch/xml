@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+	
+		<person document="1" firstname="Matias" lastname="Soto" age="24"/>
+		<person document="2" firstname="Sonia" lastname="Gomez" age="45"/>
+		<person document="3" firstname="Juan" lastname="Vidal" age="33"/>
+		<person document="4" firstname="Fernando" lastname="Perez" age="28"/>
+		<person document="5" firstname="Micaela" lastname="Solari" age="30"/>
+		<person document="6" firstname="Gabriel" lastname="Quiroga" age="55"/>
+		<person document="7" firstname="Agustina" lastname="Spadari" age="50"/>
+		<person document="8" firstname="Ignacio" lastname="Perez" age="26"/>
+		<person document="9" firstname="Rodrigo" lastname="Santos" age="37"/>
+	
+	

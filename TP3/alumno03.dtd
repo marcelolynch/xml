@@ -1,0 +1,11 @@
+<!ELEMENT alumno ((legajo, nombre, apellido, materias) | (legajo, materias) | (legajo, nombre, apellido))>
+<!ELEMENT materias (materia)*>
+<!ELEMENT materia ((codigo, nombreMateria, objetivos, docentes) | (codigo, nombreMateria, objetivos))>
+<!ELEMENT docentes (docente, (docente, (docente)?)?)>
+<!ELEMENT legajo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nombreMateria (#PCDATA)>
+<!ELEMENT objetivos (#PCDATA)>
+<!ELEMENT docente (#PCDATA)>

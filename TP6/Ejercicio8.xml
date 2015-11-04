@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="IOL2">
+			<client name="ITBA"/>
+			<dates from="2014-06-01" to="2016-01-01"/>
+			<platform name="Java"/>
+			<staff>
+				<person document="2"/>
+				<person document="3"/>
+				<person document="6"/>
+				<person document="7"/>
+				<person document="8"/>
+			</staff>
+		</project>

@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:complexType name="personData">
+		<xsd:sequence>
+		<xsd:element name="name">
+			<xsd:complexType>
+				<xsd:sequence>
+				<xsd:element name="firstname" type="xsd:string" />
+				<xsd:element name="surname" minOccurs="0" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>	
+		<xsd:element name="address">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:pattern value="(\w[\w_+-.]*)?\w@\w+(\.([\w]+(-+[\w]+)*))*\.[A-Za-z]+" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:element>
+	
+		</xsd:sequence>
+	</xsd:complexType>
+	
+
+	<xsd:element name="emails">
+	<xsd:complexType>
+	<xsd:sequence>
+	<xsd:element name="email" maxOccurs="unbounded">
+		<xsd:complexType mixed="true" >
+			<xsd:sequence>
+				<xsd:element name="date" type="xsd:date" />
+			
+				<xsd:element name="header">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="from" type="personData" />
+							<xsd:element name="to" type="personData" />
+						</xsd:sequence>
+					<xsd:attribute name="encoding" default="UTF-8">
+						<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="UTF-8" />
+							<xsd:enumeration value="UTF-16" />
+							<xsd:enumeration value="ISO-8856-1" />
+						</xsd:restriction> 
+						</xsd:simpleType>
+					</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+					
+				<xsd:element name="subject">
+					<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="256" />
+					</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+			
+				<xsd:element name="body" type="xsd:string" />
+			</xsd:sequence>	
+
+			<xsd:attribute name="id" type="xsd:ID" use="required" />
+			<xsd:attribute name="replies_to" type="xsd:IDREF" />
+		</xsd:complexType>
+	</xsd:element>
+
+	</xsd:sequence>
+	</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
+

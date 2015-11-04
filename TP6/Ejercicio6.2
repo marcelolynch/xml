@@ -1,0 +1,19 @@
+declare function local:proyectosDe($cliente as node()) as node()
+{
+    <projects>
+    {doc("projects.xml")//project[client/@name=$cliente/@name]}
+    </projects>
+};
+
+
+<clients>{
+for $c in doc("clients.xml")//client
+let $data := $c/*
+return <client name="{$c/@name}">
+          {$data}
+          {local:proyectosDe($c)}
+        </client>
+}</clients>
+
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:simpleType name="emailType">
+		<xsd:restriction base="xsd:string">
+              	<xsd:pattern value="(\w[\w_+-.]*)?\w@\w+(\.([\w]+(-+[\w]+)*))*\.[A-Za-z]+" />
+                 </xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="linkType">
+		<xsd:restriction base="xsd:string">
+		<xsd:pattern value="https?://\w+(\.([\w]+(-+[\w]+)*))*\.[A-Za-z]+(/\w+(\.[A-Za-z]+)*)*" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="itemT">
+		<xsd:sequence maxOccurs="unbounded">
+			<xsd:element name="title" type="xsd:string" />
+			<xsd:element name="link" type="linkType" />
+			<xsd:element name="pubDate" type="xsd:date" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:element name="rss">
+	<xsd:complexType>	
+		<xsd:sequence>
+			<xsd:element name="channel">
+				<xsd:complexType>
+					<xsd:sequence>
+					<xsd:element name="title" type="xsd:string" />
+					<xsd:element name="link" type="linkType" />
+					<xsd:element name="description" type="xsd:string" />
+
+					<xsd:element name="pubDate" minOccurs="0" type="xsd:date" />
+					<xsd:element name="webMaster" minOccurs="0" type="emailType" />
+					<xsd:element name="language" minOccurs="0">
+						<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="es-ar" />
+							<xsd:enumeration value="en-us" />
+						</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+
+					<xsd:element name="item" type="itemT" minOccurs="0" maxOccurs="unbounded" /> 
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		
+		<xsd:attribute name="version" use="required">
+			<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="0.9" />
+				<xsd:enumeration value="0.9.1" />
+				<xsd:enumeration value="1.0" />
+				<xsd:enumeration value="2.0" />
+			</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	
+	</xsd:complexType>	
+	</xsd:element>
+</xsd:schema> 

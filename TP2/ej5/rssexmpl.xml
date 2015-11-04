@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rss xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="rss.xsd" version="1.0">
+<channel>
+	<title>Hola Mundo con Chelivery</title>
+	<link>http://marcelolynch.com</link>
+	<description>Me cuesta pensar en inventos para los TP</description>
+	<webMaster>chelo@marcelolynch.com</webMaster>
+	<language>es-ar</language>
+	<item>
+		<title>Titulo 1</title>
+		<link>http://marcelolynch.com/marcelo/m.tml</link>
+		<pubDate>2015-10-10</pubDate>
+	</item>
+</channel>
+</rss>
+	

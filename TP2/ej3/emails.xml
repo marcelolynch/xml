@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<emails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="emails.xsd">
+<email id="abcd">
+	<date>2015-12-12</date>
+	<header>
+		<from>
+			<name>
+				<firstname>Marcelo</firstname>
+				<surname>Lynchester</surname>
+			</name>
+			<address>chelo@c929.a.helivery.edu-copy.com</address>
+		</from>
+		<to>
+			<name>
+				<firstname>El</firstname>
+				<surname>Chabon</surname>
+			</name>
+			<address>chaboncin@dominio.com</address>
+		</to>
+	</header>
+	<subject>Prueba!!</subject>
+	<body>
+		Querido Chabon:
+		Ojala te mueras
+		Un saludo
+	</body>
+</email>
+	
+<email id="C3">
+	<date>2015-11-12</date>
+	<header>
+		<from>
+			<name>
+				<firstname>Marcelo</firstname>
+				<surname>Lynchester</surname>
+			</name>
+			<address>chelo@chelivery.com</address>
+		</from>
+		<to>
+			<name>
+				<firstname>El</firstname>
+				<surname>Chabon</surname>
+			</name>
+			<address>chaboncin@dominio.com</address>
+		</to>
+	</header>
+	SAKDJSAKLDJ3304923049SKADJJ235
+	<subject>
+		Prueba!!
+	</subject>
+	<body>
+		probando
+	</body>
+</email>
+
+<email id="C1">
+	alfanum23492349239
+	<date>2015-12-12</date>
+	<header encoding="UTF-16">
+		<from>
+			<name>
+				<firstname>Marcelo</firstname>
+				<surname>Lynchester</surname>
+			</name>
+			<address>chelo@chelivery.com</address>
+		</from>
+		<to>
+			<name>
+				<firstname>El</firstname>
+				<surname>Chabon</surname>
+			</name>
+			<address>chaboncin@dominio.com</address>
+		</to>
+
+	</header>
+	<subject>
+		Prueba!!
+	</subject>
+		 
+	<body>
+		Querido Chabon:
+		Ojala te mueras
+		Un saludo
+	</body>
+</email>
+</emails>

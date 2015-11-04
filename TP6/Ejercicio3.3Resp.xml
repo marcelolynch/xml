@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><projects><project name="CRM YPF">
+			<client name="YPF"/>
+			<dates from="2009-01-01" to="2009-12-01"/>
+			<platform name="PHP"/>
+			<staff>
+				<person document="1"/>
+			</staff>
+		</project></projects>
